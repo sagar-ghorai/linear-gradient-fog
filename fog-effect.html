@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+		}
+
+		section{
+			height: 100vh;
+			background: #000;
+		}
+
+		section:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to right, #FF7600, #fff ,#00FF00);
+			mix-blend-mode: color;
+			pointer-events: none;
+		}
+
+		video{
+			object-fit: cover;
+			height: 100vh;
+		}
+
+		h1{
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			text-align: center;
+			color: #fff;
+			font-size: 40px;
+			letter-spacing: 4px;
+			font-family: sans-serif;
+			/*background: linear-gradient(to right, #FF7600, #fff ,#00FF00);
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;*/
+		}
+
+		h1 span{
+			opacity: 0;
+			display: inline-block;
+			animation: animate 1s linear forwards;
+		}
+
+		@keyframes animate{
+			0%{opacity: 0;
+				transform: rotateY(90deg);
+				filter: blur(10px);
+			}
+			100%{opacity: 1;
+				transform: rotateY(0deg);
+				filter: blur(0);
+			}
+		}
+
+		h1 span:nth-child(1){
+			animation-delay: 3.15s;
+		}
+		h1 span:nth-child(2){
+			animation-delay: 3.2s;
+		}
+		h1 span:nth-child(3){
+			animation-delay: 3.7s;
+		}
+		h1 span:nth-child(4){
+			animation-delay: 4.1s;
+		}
+		h1 span:nth-child(5){
+			animation-delay: 4.4s;
+		}
+		h1 span:nth-child(6){
+			animation-delay: 0.5s;
+		}
+		h1 span:nth-child(7){
+			animation-delay: 1.5s;
+		}
+		h1 span:nth-child(8){
+			animation-delay: 2s;
+		}
+		h1 span:nth-child(9){
+			animation-delay: 2.5s;
+		}
+		h1 span:nth-child(10){
+			animation-delay: 2.9s;
+		}
+		h1 span:nth-child(11){
+			animation-delay: 3.3s;
+		}
+		h1 span:nth-child(12){
+			animation-delay: 3.7s;
+		}
+		h1 span:nth-child(13){
+			animation-delay: 4.1s;
+		}
+		h1 span:nth-child(14){
+			animation-delay: 4.5s;
+		}
+		h1 span:nth-child(15){
+			animation-delay: 4.8s;
+		}
+		h1 span:nth-child(16){
+			animation-delay: 5.1s;
+		}
+		h1 span:nth-child(17){
+			animation-delay: 5.3s;
+		}
+		h1 span:nth-child(18){
+			animation-delay: 5.4s;
+		}
+		h1 span:nth-child(19){
+			animation-delay: 3.2s;
+		}
+		h1 span:nth-child(20){
+			animation-delay: 3.2s;
+		}
+		h1 span:nth-child(21){
+			animation-delay: 3.6s;
+		}
+		h1 span:nth-child(22){
+			animation-delay: 4.4s;
+		}
+		
+		.garua{
+			color:  #FF7600;
+		}
+
+		.green{
+			color: #00FF00;
+		}
+
+		.white{
+			color: #fff;
+		}
+
+		.garuawhite{
+			background: linear-gradient(to right, #FF7600, #fff);
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+		}
+
+		.garuawhite2{
+			background: linear-gradient(to right, #FBC596, #fff);
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+		}
+
+		.whitegreen{
+			background: linear-gradient(to right, #fff ,#00FF00);
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+		}
+		/* view for desktop screen */
+		@media(min-width: 1024px){
+			section{
+				width: 100%;
+				height: auto;
+			}
+
+			h1{
+				font-size: 70px;
+				letter-spacing: 4px;
+			}
+
+			video{
+				width: 100vw;
+				height: 100vh;
+				object-fit: cover;
+			}
+		}
+
+		/* view for tablet screen */
+		@media(min-width: 769px) and (max-width: 1023px){
+			section{
+				width: 100%;
+				height: auto;
+			}
+
+			h1{
+				font-size: 40px;
+				letter-spacing: 4px;
+			}
+
+			video{
+				width: 100vw;
+				height: 100vh;
+				object-fit: cover;
+			}
+		}
+		/* view for mobile screen */
+		@media (max-width: 768px) and (min-width: 415px){
+			section{
+				width: 100%;
+				height: auto;
+			}
+
+			h1{
+				font-size: 30px;
+				letter-spacing: 3px;
+			}
+
+			video{
+				width: 100vw;
+				height: 100vh;
+				object-fit: cover;
+			}
+
+		h1 span:nth-child(1){
+			animation-delay: 3.15s;
+		}
+		h1 span:nth-child(2){
+			animation-delay: 3.2s;
+		}
+		h1 span:nth-child(3){
+			animation-delay: 3.7s;
+		}
+		h1 span:nth-child(4){
+			animation-delay: 4.1s;
+		}
+		h1 span:nth-child(5){
+			animation-delay: 4.4s;
+		}
+		h1 span:nth-child(6){
+			animation-delay: 0.5s;
+		}
+		h1 span:nth-child(7){
+			animation-delay: 1.5s;
+		}
+		h1 span:nth-child(8){
+			animation-delay: 2s;
+		}
+		h1 span:nth-child(9){
+			animation-delay: 2.5s;
+		}
+		h1 span:nth-child(10){
+			animation-delay: 2.8s;
+		}
+		h1 span:nth-child(11){
+			animation-delay: 3.1s;
+		}
+		h1 span:nth-child(12){
+			animation-delay: 3.4s;
+		}
+		h1 span:nth-child(13){
+			animation-delay: 3.7s;
+		}
+		h1 span:nth-child(14){
+			animation-delay: 3.9s;
+		}
+		h1 span:nth-child(15){
+			animation-delay: 4.1s;
+		}
+		h1 span:nth-child(16){
+			animation-delay: 4.3s;
+		}
+		h1 span:nth-child(17){
+			animation-delay: 4.4s;
+		}
+		h1 span:nth-child(18){
+			animation-delay: 4.5s;
+		}
+		h1 span:nth-child(19){
+			animation-delay: 3.2s;
+		}
+		h1 span:nth-child(20){
+			animation-delay: 3.2s;
+		}
+		h1 span:nth-child(21){
+			animation-delay: 3.5s;
+		}
+		h1 span:nth-child(22){
+			animation-delay: 3.8s;
+		}
+		}
+
+		/* view for low resolution screen*/
+		@media (max-width: 414px){
+			section{
+				width: 100%;
+				height: auto;
+			}
+
+			h1{
+				font-size: 23px;
+				letter-spacing: 2px;
+			}
+
+			video{
+				width: 100vw;
+				height: 100vh;
+				object-fit: cover;
+			}
+
+		h1 span:nth-child(1){
+			animation-delay: 3.15s;
+		}
+		h1 span:nth-child(2){
+			animation-delay: 3.2s;
+		}
+		h1 span:nth-child(3){
+			animation-delay: 3.7s;
+		}
+		h1 span:nth-child(4){
+			animation-delay: 4.1s;
+		}
+		h1 span:nth-child(5){
+			animation-delay: 4.4s;
+		}
+		h1 span:nth-child(6){
+			animation-delay: 0.5s;
+		}
+		h1 span:nth-child(7){
+			animation-delay: 1.5s;
+		}
+		h1 span:nth-child(8){
+			animation-delay: 2s;
+		}
+		h1 span:nth-child(9){
+			animation-delay: 2.5s;
+		}
+		h1 span:nth-child(10){
+			animation-delay: 2.8s;
+		}
+		h1 span:nth-child(11){
+			animation-delay: 3.1s;
+		}
+		h1 span:nth-child(12){
+			animation-delay: 3.4s;
+		}
+		h1 span:nth-child(13){
+			animation-delay: 3.7s;
+		}
+		h1 span:nth-child(14){
+			animation-delay: 3.9s;
+		}
+		h1 span:nth-child(15){
+			animation-delay: 4.1s;
+		}
+		h1 span:nth-child(16){
+			animation-delay: 4.3s;
+		}
+		h1 span:nth-child(17){
+			animation-delay: 4.4s;
+		}
+		h1 span:nth-child(18){
+			animation-delay: 4.5s;
+		}
+		h1 span:nth-child(19){
+			animation-delay: 3.2s;
+		}
+		h1 span:nth-child(20){
+			animation-delay: 3.2s;
+		}
+		h1 span:nth-child(21){
+			animation-delay: 3.5s;
+		}
+		h1 span:nth-child(22){
+			animation-delay: 3.8s;
+		}
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<video src="smoke.mp4" autoplay muted></video>
+		<h1>
+			<span class="garuawhite">H</span>
+			<span class="white">A</span>
+			<span class="white">P</span>
+			<span class="white">P</span>
+			<span class="whitegreen">Y</span><br>
+
+			<span class="garua">I</span>
+			<span class="garua">N</span>
+			<span class="garua">D</span>
+			<span class="garua">E</span>
+			<span class="garuawhite2">P</span>
+			<span class="white">E</span>
+			<span class="white">N</span>
+			<span class="white">D</span>
+			<span class="green">E</span>
+			<span class="green">N</span>
+			<span class="green">C</span>
+			<span class="green">E</span>
+			<br>
+			<span class="white">D</span>
+			<span class="white">A</span>
+			<span class="white">Y</span>
+		</h1>
+	</section>
+</body>
+</html>
